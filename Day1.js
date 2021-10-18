@@ -2,13 +2,13 @@
 function add(a, b) {
   return a + b;
 }
-console.log(5, 9);
+console.log(add(5, 9));
 //multiplication program
-function multiply(a, b) {
+function multiplication(a, b) {
   return a * b;
 }
-console.log(4, 9);
-console.log(2, 20);
+console.log(multiplication(4, 9));
+console.log(multiplication(2, 20));
 
 function calcRectArea(width, height) {
   return width * height;
