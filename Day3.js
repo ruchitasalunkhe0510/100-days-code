@@ -4,10 +4,10 @@
 
 //Array.prototype.slice([begin[, end]])
 
-// let array1 = [1, 2, 3, 4, 5];
-// let array2 = array1.slice(2, 4);
-// console.log(array1);
-// console.log(array2);
+let array1 = [1, 2, 3, 4, 5];
+let array2 = array1.slice(2, 4);
+console.log(array1);
+console.log(array2);
 
 //Reverse
 
