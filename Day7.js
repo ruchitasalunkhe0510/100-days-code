@@ -27,3 +27,25 @@ let minute = 30;
 if (hour == 12 && minute == 30) {
   alert( 'The time is 12:30' );
 }
+
+
+//!(NOT)
+alert( !true ); // false
+alert( !0 ); // true
+
+//Nullish coalescing operator '??'
+let firstName = null;
+let lastName = null;
+let nickName = "Supercoder";
+
+// shows the first defined value:
+alert(firstName ?? lastName ?? nickName ?? "Anonymous"); // Supercoder
+
+
+let height = null;
+let width = null;
+
+// important: use parentheses
+let area = (height ?? 100) * (width ?? 50);
+
+alert(area); // 5000
