@@ -8,3 +8,9 @@ let user = {
   },
 };
 user.sayHi(); //rucha
+
+function sayHi() {
+  alert(this);
+}
+
+sayHi(); // undefined
