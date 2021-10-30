@@ -26,3 +26,20 @@ let user = { name: "rahul" };
 Object.assign(user, { name: "Pete" });
 
 alert(user.name); //now user={name:"pete"}
+
+let user = {
+  name: "rucha",
+  age: 21,
+};
+let clone = Object.assign({}, user); //another methoud of cloning of object
+
+//Nested cloning
+let user = {
+  name: " John",
+  sizes: {
+    height: 182,
+    width: 50,
+  },
+};
+
+alert(user.sizes.height); //182
