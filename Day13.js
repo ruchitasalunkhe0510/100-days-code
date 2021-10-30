@@ -43,3 +43,17 @@ let user = {
 };
 
 alert(user.sizes.height); //182
+
+//deep cloning
+let user = {
+  name: "anil",
+  sizes: {
+    height: 182,
+    width: 50,
+  },
+};
+let clone = Object.assign({}, user);
+alert(user.sizes); //true, same object
+//user and clone share sizes
+user.sizes.width++; //change a properth from one place
+alert(clone.sizes, width); //51
