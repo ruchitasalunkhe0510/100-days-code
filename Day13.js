@@ -57,3 +57,20 @@ alert(user.sizes); //true, same object
 //user and clone share sizes
 user.sizes.width++; //change a properth from one place
 alert(clone.sizes, width); //51
+
+//calulator
+let calculator = {
+  sum() {
+    return this.a + this.b;
+  },
+  mul() {
+    return this.a * this.b;
+  },
+  read() {
+    this.a = +prompt("a?", 0);
+    this.b = +prompt("b?", 0);
+  },
+};
+calculator.read();
+alert(calculator.sum());
+alert(calculator.mul());
