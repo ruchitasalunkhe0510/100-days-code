@@ -21,3 +21,19 @@ function User(name) {
 
 let john = User("john"); //redirects call to new USER
 alert(john.name);
+
+//return from constructors
+
+function BigUser() {
+  this.name = "John";
+  return { name: "Gudii" }; //return this object
+}
+
+alert(new BigUser().name); //Gudii, got that object
+
+function SmallUser() {
+  this.name = "John";
+  return; //return this
+}
+
+alert(new SmallUser().name); //John
