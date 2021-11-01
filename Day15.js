@@ -15,3 +15,10 @@ let user = {
 let id = Symbol("id");
 user[id] = 1;
 alert(user[id]); //we can access the data using the symbol as a key
+
+let id = Symbol("id");
+let user = {
+  [id]: 123,
+};
+let clone = Object.assign({}, user);
+alert(clone[id]); //123
