@@ -7,3 +7,11 @@ alert(id.toString()); //symbol(id), now it works
 
 let id = Symbol("id");
 alert(id.description); //id
+
+let user = {
+  name: "John",
+};
+
+let id = Symbol("id");
+user[id] = 1;
+alert(user[id]); //we can access the data using the symbol as a key
