@@ -27,7 +27,14 @@
 // });
 
 //include => (In array check value is present or not return true or false)
-const arr = ["rucha", "shubu", "rahul", "baba"];
+// const arr = ["rucha", "shubu", "rahul", "baba"];
 // let checkmethoud = arr.includes("rucha"); //true
-let checkmethoud = arr.includes("sumit"); //false
-console.log(checkmethoud);
+// let checkmethoud = arr.includes("sumit"); //false
+// console.log(checkmethoud);
+
+//filter Method => this method create new array with only element passes they satified condition
+// in provied function
+const arr = [1, 4, 5, 2, 8, 9];
+const arraymethod = arr.filter((num) => num > 4);
+console.log(arraymethod);
+console.log(arr);
