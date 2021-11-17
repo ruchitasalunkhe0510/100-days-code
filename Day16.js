@@ -59,8 +59,16 @@
 // console.log(smallNum);
 
 //every() => this method check if all the array's item passed the condition. If passed, if return 'true' otherwise'false'
-const arr = [1, 2, 3, 4, 5, 6];
-const greter = arr.every((num) => num > 4);
-console.log(greter);
-const less = arr.every((num) => num < 9);
-console.log(less);
+// const arr = [1, 2, 3, 4, 5, 6];
+// const greter = arr.every((num) => num > 4);
+// console.log(greter);
+// const less = arr.every((num) => num < 9);
+// console.log(less);
+
+//sort() => this method used to arrange/sort array's item either ascending or descending order
+const arr = [1, 3, 4, 5, 6, 7];
+const alpha = ["a", "e", "b", "y", "z"];
+desc = arr.sort((a, b) => (a > b ? -1 : 1));
+console.log(desc);
+asc = alpha.sort((a, b) => (a > b ? 1 : -1));
+console.log(asc);
