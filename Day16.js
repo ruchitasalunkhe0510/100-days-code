@@ -47,6 +47,20 @@
 
 //reduce => the reduce() method applies a function against an accumlator and each element in the array
 //(from left to right) to reduce it to a single value
-const arr = [1, 2, 3, 4, 5];
-const sum = arr.reduce((total, value) => total + value);
-console.log(sum); //15
+// const arr = [1, 2, 3, 4, 5];
+// const sum = arr.reduce((total, value) => total + value);
+// console.log(sum); //15
+
+//some() => this method check if at least one array item passed the condition. if passed , it return 'true'otherwise 'false'
+// const arr = [1, 3, 4, 5, 7, 9];
+// const largeNum = arr.some((num) => num > 4);
+// console.log(largeNum);
+// const smallNum = arr.some((num) => num <= 0);
+// console.log(smallNum);
+
+//every() => this method check if all the array's item passed the condition. If passed, if return 'true' otherwise'false'
+const arr = [1, 2, 3, 4, 5, 6];
+const greter = arr.every((num) => num > 4);
+console.log(greter);
+const less = arr.every((num) => num < 9);
+console.log(less);
