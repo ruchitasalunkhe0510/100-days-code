@@ -66,9 +66,19 @@
 // console.log(less);
 
 //sort() => this method used to arrange/sort array's item either ascending or descending order
-const arr = [1, 3, 4, 5, 6, 7];
-const alpha = ["a", "e", "b", "y", "z"];
-desc = arr.sort((a, b) => (a > b ? -1 : 1));
-console.log(desc);
-asc = alpha.sort((a, b) => (a > b ? 1 : -1));
-console.log(asc);
+// const arr = [1, 3, 4, 5, 6, 7];
+// const alpha = ["a", "e", "b", "y", "z"];
+// desc = arr.sort((a, b) => (a > b ? -1 : 1));
+// console.log(desc);
+// asc = alpha.sort((a, b) => (a > b ? 1 : -1));
+// console.log(asc);
+
+//Array.from() => this change all thing that are array-like or iterable into true array espacillay, when working with dom
+// const name = "DsCode";
+// const nameArray = Array.from(name);
+// console.log(nameArray);
+// console.log(name);
+
+//Array.of() => this create array from every argument passed into it.
+const num = Array.of(1, 2, 4, 5, 6);
+console.log(num);
