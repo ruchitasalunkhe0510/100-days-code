@@ -34,7 +34,13 @@
 
 //filter Method => this method create new array with only element passes they satified condition
 // in provied function
-const arr = [1, 4, 5, 2, 8, 9];
-const arraymethod = arr.filter((num) => num > 4);
-console.log(arraymethod);
+// const arr = [1, 4, 5, 2, 8, 9];
+// const arraymethod = arr.filter((num) => num > 4);
+// console.log(arraymethod);
+// console.log(arr);
+
+//map => this method create new array by calling provied function in every element.(store some data and wrtten same data in method)
+const arr = [1, 3, 5, 6, 8, 9];
+const oneadd = arr.map((num) => num + 1);
+console.log(oneadd);
 console.log(arr);
