@@ -40,7 +40,13 @@
 // console.log(arr);
 
 //map => this method create new array by calling provied function in every element.(store some data and wrtten same data in method)
-const arr = [1, 3, 5, 6, 8, 9];
-const oneadd = arr.map((num) => num + 1);
-console.log(oneadd);
-console.log(arr);
+// const arr = [1, 3, 5, 6, 8, 9];
+// const oneadd = arr.map((num) => num + 1);
+// console.log(oneadd);
+// console.log(arr);
+
+//reduce => the reduce() method applies a function against an accumlator and each element in the array
+//(from left to right) to reduce it to a single value
+const arr = [1, 2, 3, 4, 5];
+const sum = arr.reduce((total, value) => total + value);
+console.log(sum); //15
