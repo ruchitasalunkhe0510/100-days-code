@@ -50,3 +50,13 @@ function myFunction(value, index, array) {
   return value > 18;
 }
 console.log(first);
+
+//Exponentiation operator: the exponention operator (**) raise the first operand to power of second operand
+
+// var x = 5;
+// var z = x ** 2; //result is 25
+
+// x ** y produces the same result as Math.pow(x,y)
+var x = 5;
+var z = Math.pow(x, 2);
+console.log(z);
