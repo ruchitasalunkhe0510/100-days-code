@@ -60,3 +60,13 @@ console.log(first);
 var x = 5;
 var z = Math.pow(x, 2);
 console.log(z);
+
+//New  Number Methouds :1) Number.isIngeger() 2) Number.isSafeInteger()
+// The Number.isInteger() Method:  The Number.isInterger() methoud return true if the argument ia an integer
+
+Number.isInteger(10); //return true
+Number.isInteger(10.7); //return false
+
+//The Number.isSafeInteger() Methoud: a safe integer ia an integer that can be exactly reprented as a double precision number
+Number.isSafeInteger(10); //return true
+Number.isSafeInteger(1234567890); //return false
