@@ -70,3 +70,80 @@ Number.isInteger(10.7); //return false
 //The Number.isSafeInteger() Methoud: a safe integer ia an integer that can be exactly reprented as a double precision number
 Number.isSafeInteger(10); //return true
 Number.isSafeInteger(1234567890); //return false
+
+//New Global Methods:  1)isFinite()  2)isNaN()
+
+//-The isFinite() Methoud : The global isFinite() method returns false if the argument is Infinity or NaN.
+isFinite(10 / 0); //return false
+isFinite(10 / 1); //return true
+
+//-The isNan() Methoud: The global isNaN() methoud return true if the argument is NaN Otherwise it return false
+isNaN("Hello"); //return true
+
+//Arrow function(=>)
+//1) Return Number function
+//ES5
+function getNum() {
+  return 10;
+}
+//ES6
+const getNum = () => 10;
+
+//2) Return Array function
+function getArr() {
+  return [1, 2, 3];
+}
+//ES6
+const getArr = () => [1, 2, 3];
+
+//3) return object function
+//ES5
+function getObj() {
+  return { a: 1, b: 2, c: 3 };
+}
+//ES6
+const getObj = () => ({ a: 1, b: 2, c: 3 });
+
+// Merge object with the spread operator(...)
+
+var obj1 = { a: 1, b: 2 };
+var obj2 = { c: 3, d: 4 };
+//ES5
+var obj3 = Object.assign(obj1, obj2);
+//ES6
+var obj3 = { ...obj1, ...obj2 };
+
+//Async Function(Callback vs. Promise)
+//ES5 (callback)
+function isEvenNumber(num, callback) {
+  if (num % 2 === 0) {
+    callback(true);
+  } else {
+    callback(false);
+  }
+}
+isEvenNumber(10, function (result) {
+  if (result) {
+    console.log("even number");
+  } else {
+    console.log("odd number");
+  }
+});
+
+//ES6
+const isEvenNumber = (num) => {
+  return new Promise((resolve, reject) => {
+    if (num % 2 === 0) {
+      resolve(true);
+    } else {
+      reject(false);
+    }
+  });
+};
+isEvenNumber(10)
+  .then((result) => {
+    console.log("Even number");
+  })
+  .catch((error) => {
+    console.log("odd number");
+  });
