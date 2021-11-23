@@ -29,7 +29,16 @@
 // mycar = new car("Ford");
 
 //Default parameter value
-function myFunction(x, y = 10) {
-  return x + y;
+// function myFunction(x, y = 10) {
+//   return x + y;
+// }
+// myFunction(5); //will return 15
+
+//Array.find():
+var numbers = [4, 9, 16, 25, 29];
+var first = numbers.find(myFunction);
+
+function myFunction(value, index, array) {
+  return value > 18;
 }
-myFunction(5); //will return 15
+console.log(first);
