@@ -21,9 +21,15 @@
 //   }
 // }
 
-class Car {
-  constructor(brand) {
-    this.carname = brand;
-  }
+// class Car {
+//   constructor(brand) {
+//     this.carname = brand;
+//   }
+// }
+// mycar = new car("Ford");
+
+//Default parameter value
+function myFunction(x, y = 10) {
+  return x + y;
 }
-mycar = new car("Ford");
+myFunction(5); //will return 15
