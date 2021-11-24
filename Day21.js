@@ -42,14 +42,25 @@ const getBiodata = (indexdata) => {
   });
 };
 //promise consume
-project
-  .then((roll_no) => {
-    console.log(roll_no);
-    return getBiodata(roll_no[1]);
-  })
-  .then((kuchbhi) => {
-    console.log(kuchbhi);
-  })
-  .catch((error) => {
-    console.log(error);
-  });
+//then and catch methoud
+// project
+//   .then((roll_no) => {
+//     console.log(roll_no);
+//     return getBiodata(roll_no[1]);
+//   })
+//   .then((kuchbhi) => {
+//     console.log(kuchbhi);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
+
+//async and await
+async function getData() {
+  const rollnodata = await project;
+  console.log(rollnodata);
+
+  const biodatas = await getBiodata(rollnodata[1]);
+  console.log(biodatas);
+}
+getData();
