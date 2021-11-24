@@ -28,5 +28,15 @@ function sum() {
 sum();
 
 //3) in a methoud , this refers to global object
+var student = {
+  name: "ruhi",
+  qaulification: "B.E",
+  greeky: function () {
+    var add = 2 + 2;
+    console.log("sum of num:" + add); //4
+    console.log(this); //window
+  },
+};
+student.greeky();
 
 //4) in a function , in strict mode, this is undefined
