@@ -10,3 +10,13 @@ function vowelsAndConsonants(s) {
   }
   console.log(consonants);
 }
+
+//factorial code
+function factorial(n) {
+  if (n == 0) {
+    return 1;
+  } else {
+    return n * factorial(n - 1);
+  }
+  console.log(factorial(n));
+}
