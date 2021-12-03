@@ -52,4 +52,80 @@ function reverse() {
   }
   return result;
 }
-console.log(reverse()); //yrtnuoc ym si aidnI
+console.log(reverse()); //yrtnuoc ym si
+
+//Code 7: Find factorial of user input number
+// const number = parseInt(prompt("Enter a positive no:"));
+// if (number < 0) {
+//   console.log("Error");
+// } else if (number === 0) {
+//   console.log(`the factorial is 1`);
+// } else {
+//   let fact = 1;
+//   for (var i = 1; i <= number; i++) {
+//     fact *= i;
+//   }
+//   console.log(`the factrial is ${fact}`);
+// }
+
+function factorial(num) {
+  if (num === 0) {
+    return 1;
+  } else {
+    return num * factorial(num - 1);
+  }
+}
+console.log(factorial(5));
+
+//Swapping of 2 number with third number
+let a = 12;
+let b = 20;
+let c;
+c = a;
+a = b;
+b = c;
+console.log(a, b, c);
+
+//Code 11: To check the string or number is palindrome or not( ex: 121,madam,anna) using reverse method
+function checkPalindrome() {
+  var string = "annauii";
+  var result = string.split("").reverse().join("");
+  if (string == result) {
+    console.log("Palindrome");
+  } else {
+    console.log("Not Palindrome");
+  }
+}
+checkPalindrome();
+
+//Code 13: To find longest word from a string using (for of) /*for(var i=0; i>=num; i++) means iterate by indexing*/  /*for (var word of words) means iterate by an elements not
+// by indexing*/
+function longestWord() {
+  let string = "supriya is a masooooom good girl";
+  var words = string.split("");
+  var longest = "";
+  for (var word of words) {
+    console.log(word);
+    if (word.length > longest.length) {
+      longest = word;
+    }
+    return longest.length;
+  }
+}
+longestWord();
+
+//Code 15: To find longest word from a string using custom code
+
+function longest() {
+  var str = "Priya is a good girl and having hardworking skills";
+  var words = str.split("");
+  var longest = "";
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].length > longest.length) {
+      longest = words[i];
+    }
+  }
+  console.log(longest);
+  return longest;
+}
+longest();
