@@ -13,3 +13,14 @@ function longestString() {
   return arr[0].substring(0, i);
 }
 longestString();
+
+//to find vowels in string
+function findVowels() {
+  vowels = ["a", "e", "i", "o", "u"];
+  var str = "priya";
+  for (var letter of str.toLowerCase())
+    if (vowels.includes(letter)) {
+      console.log(letter);
+    }
+}
+findVowels();
