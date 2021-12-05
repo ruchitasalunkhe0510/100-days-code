@@ -24,3 +24,16 @@ function findVowels() {
     }
 }
 findVowels();
+
+//to find first pair whose sum is zero
+function getSum() {
+  var array = [-3, -2, -1, 0, 1, 2, 3];
+  for (let number of array) {
+    for (let i = 0; i < array.length; i++) {
+      if (number + array[i] === 0) {
+        console.log(number, array[i]);
+      }
+    }
+  }
+}
+getSum();
