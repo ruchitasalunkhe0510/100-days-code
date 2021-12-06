@@ -41,3 +41,29 @@ function missingElement() {
   console.log(a.concat(missing).sort());
 }
 missingElement();
+
+//find missing no. in array
+function missingArray(arr) {
+  var x = 0;
+  for (let i = 0; i < arr.length; i++) {
+    x = x + 1;
+    if (arr[i] != x) {
+      console.log(x);
+    }
+  }
+}
+missingArray([1, 3, 4, 5, 6, 8, 9]);
+
+//Sorting of an string/character
+function sorting(arr) {
+  return arr.sort();
+}
+console.log(sorting(["d", "o", "g"])); //[ 'd', 'o', 'g' ]
+
+//sorting of an number
+function sorting(arr) {
+  return arr.sort((a, b) => {
+    return a - b;
+  });
+}
+console.log(sorting([1, 23, 34, 2, 76, 78])); //[ 1, 2, 23, 34, 76, 78 ]
