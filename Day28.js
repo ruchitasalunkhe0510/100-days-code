@@ -67,3 +67,15 @@ function sorting(arr) {
   });
 }
 console.log(sorting([1, 23, 34, 2, 76, 78])); //[ 1, 2, 23, 34, 76, 78 ]
+
+//To check if given number is prime or not
+function isPrime(num) {
+  if (num < 2) return false;
+  for (let k = 2; k < num; k++) {
+    if (num % k == 0) {
+      return false;
+    }
+  }
+  return true;
+}
+console.log(isPrime(20));
