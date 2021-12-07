@@ -15,3 +15,14 @@ function largestPairSumOfTwo(num) {
 }
 const result = largestPairSumOfTwo([1, 2, 3, 5, 4, 2, 9, 7]);
 console.log(result); //9+7=16
+
+// Uppercase of each first letter of a words
+function upperCaseFirst() {
+  var str = "India is my country";
+  var words = str.toLowerCase().split(" ");
+  for (var i = 0; i < words.length; i++) {
+    words[i] = words[i][0].toUpperCase() + words[i].slice(1);
+  }
+  return words.join(" ");
+}
+console.log(upperCaseFirst());
